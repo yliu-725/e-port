@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First e-portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/2039be61be.js"
       crossorigin="anonymous"
@@ -15,23 +15,23 @@
       <nav>
         <div class="personal__logo">Yihui Liu</div>
         <ul class="nav__link--list">
-          <li>
+          <li class="nav__link">
             <a
               href="#languages"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Languages</a
             >
           </li>
-          <li>
+          <li class="nav__link">
             <a
               href="#projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Project</a
             >
           </li>
-          <li>
+          <li class="nav__link">
             <a
-              href="#contact"
+              href="mailto:youremail@gmail.com"
               class="nav__link--anchor nav__link--anchor-primary"
               >Contact</a
             >
@@ -49,7 +49,8 @@
               />
             </figure>
             <h1 class="about-me__info--title">
-              Hey! I'm <span class="text--purple">Yihui Liu</span> 👋
+              Hey! I'm <span class="text--purple">Yihui Liu</span>
+              <span class="wave">👋</span>
             </h1>
             <p class="about-me__info--para">
               I'm a
@@ -85,14 +86,16 @@
     <section id="languages">
       <div class="container">
         <div class="row">
-          <h1 class="section__title">This is my technology stack</h1>
+          <h1 class="section__title">
+            This is my <span class="text--purple">technology stack</span>
+          </h1>
           <div class="language__list">
             <div class="language">
               <figure class="language__image--wrapper">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
                   class="language__image"
-                  alt=""
+                  alt="HTML logo"
                 />
               </figure>
               <span class="language__name">HTML</span>
@@ -102,7 +105,7 @@
                 <img
                   src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
                   class="language__image"
-                  alt=""
+                  alt="CSS logo"
                 />
               </figure>
               <span class="language__name">CSS</span>
@@ -112,7 +115,7 @@
                 <img
                   src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
                   class="language__image"
-                  alt=""
+                  alt="Javascript logo"
                 />
               </figure>
               <span class="language__name">Javascript</span>
@@ -122,7 +125,7 @@
                 <img
                   src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
                   class="language__image"
-                  alt=""
+                  alt="React logo"
                 />
               </figure>
               <span class="language__name">React</span>
@@ -132,7 +135,7 @@
                 <img
                   src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
                   class="language__image"
-                  alt=""
+                  alt="Typescript logo"
                 />
               </figure>
               <span class="language__name">Typescipt</span>
@@ -142,7 +145,7 @@
                 <img
                   src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png"
                   class="language__image"
-                  alt=""
+                  alt="Vue logo"
                 />
               </figure>
               <span class="language__name">Vue</span>
@@ -152,7 +155,7 @@
                 <img
                   src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png"
                   class="language__image"
-                  alt=""
+                  alt="Nuxt logo"
                 />
               </figure>
               <span class="language__name">Nuxt</span>
@@ -162,7 +165,7 @@
                 <img
                   src="https://mobx.js.org/img/mobx.png"
                   class="language__image"
-                  alt=""
+                  alt="MobX logo"
                 />
               </figure>
               <span class="language__name">MobX</span>
@@ -171,5 +174,171 @@
         </div>
       </div>
     </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="text--purple">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/loopit.png"
+                  class="project__img"
+                  alt="Car subscription project"
+                />
+                <div class="project__description">
+                  <h3 class="project__description--title">Car sales project</h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    diam leo, scelerisque sed odio eget, luctus faucibus augue.
+                    Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Maecenas id eleifend libero. In
+                    hac habitasse platea dictumst.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://www.github.com/yourlink"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.yourwebsite.com"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/loopit.png"
+                  class="project__img"
+                  alt="Car subscription project"
+                />
+                <div class="project__description">
+                  <h3 class="project__description--title">Car sales project</h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    diam leo, scelerisque sed odio eget, luctus faucibus augue.
+                    Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Maecenas id eleifend libero. In
+                    hac habitasse platea dictumst.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://www.github.com/yourlink"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.yourwebsite.com"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/loopit.png"
+                  class="project__img"
+                  alt="Car subscription project"
+                />
+                <div class="project__description">
+                  <h3 class="project__description--title">Dashboard</h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    diam leo, scelerisque sed odio eget, luctus faucibus augue.
+                    Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Maecenas id eleifend libero. In
+                    hac habitasse platea dictumst.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://www.github.com/yourlink"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.yourwebsite.com"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
+            <img src="./assets/logo.svg" class="footer__logo--img" alt="" />
+          </figure>
+          <span class="footer__logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footer__social--list">
+          <a
+            href="https://google.com"
+            target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://google.com"
+            target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a
+            href="mailto:email@email.com"
+            target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            target="_blank"
+            >Email</a
+          >
+          <a
+            href="https://google.com"
+            target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            target="_blank"
+            >Resume</a
+          >
+        </div>
+        <div class="footer__copyright">Copyright © 2021 David Bragg</div>
+      </div>
+    </footer>
   </body>
 </html>
