@@ -233,7 +233,7 @@ nav {
   width: 100%;
   animation: fade-in 1200ms 800ms backwards;
   height: 100%;
-  max-height: 27vh;
+  max-height: 25vh;
 }
 
 @keyframes fade-in {
