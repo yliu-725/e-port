@@ -24,7 +24,7 @@ span {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 35px;
 }
 
 p {
@@ -232,6 +232,8 @@ nav {
 .about-me__image {
   width: 100%;
   animation: fade-in 1200ms 800ms backwards;
+  height: 100%;
+  max-height: 27vh;
 }
 
 @keyframes fade-in {
@@ -416,6 +418,7 @@ footer {
 .footer__logo--img {
   width: 70px;
   height: 70px;
+  border-radius: 50px;
 }
 
 .footer__social--link,
